@@ -1,0 +1,28 @@
+Author: OcarinaMod
+
+Version:
+    Major: 1
+    Minor: 0
+    Revision: 0
+
+Targets:
+    - 0x00033500
+
+Title: ocarina (microphone songs)
+
+Summary: whistle or hum an ocarina song with the ocarina out; the game plays it, or asks '<song>?' with its own Yes/No box.
+
+Description: |
+  While the ocarina is out (message state 6) the plugin listens to the microphone, detects notes and matches the
+  12 ocarina songs. A clear phrase is played by pressing the song's buttons (OR-ed into the game's pad state, real
+  presses still work). A phrase that looks like several songs asks '<song>?' with the game's native Yes/No text box,
+  one candidate at a time. Log in /ocarina/log.txt (written only while the ocarina is put away).
+
+Compatibility: Console
+
+MemorySize: 2MiB
+
+UsePrivateMemory: false
+
+EventsSelfManaged: true
+

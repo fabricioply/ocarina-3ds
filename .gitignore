@@ -1,0 +1,23 @@
+# build outputs
+*.elf
+*.3gx
+*.map
+*.su
+*.o
+*.d
+build-*/
+build/
+dist/
+__pycache__/
+*.pyc
+
+# never commit game data or recordings
+*.bin
+*.raw
+*.wav
+*.cia
+*.3ds
+*.cxi
+*.app
+romfs/
+exefs/

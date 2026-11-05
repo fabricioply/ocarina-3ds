@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 OcarinaMod contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+NOTICE: third-party software (not included in this repository)
+
+* devkitARM / devkitPro toolchain and libctru are needed to build. libctru is
+  distributed under the zlib license; the built ocarina.3gx links a few of its
+  system-call wrappers (svc*), so binary releases contain small parts of
+  libctru (Copyright (C) the libctru contributors, zlib license).
+* 3gxtool (https://gitlab.com/thepixellizeross/3gxtool, MIT license according
+  to its package metadata) converts the ELF into the .3gx format. It is a
+  build tool only and is not included.
+* Luma3DS (GPL-3.0) provides the plugin loader that runs ocarina.3gx on the
+  console. Nothing from Luma3DS is included; the 3GX header facts used here
+  come from its public documentation and source.
+* CTRPluginFramework is NOT used by this project (see docs/HISTORY.md).
+
+"The Legend of Zelda: Ocarina of Time 3D" and Nintendo 3DS are trademarks of
+Nintendo. This project is not affiliated with or endorsed by Nintendo. No game
+code, assets or data are distributed; src/sigs.h holds short masked
+instruction patterns used only to locate functions in the user's own game at
+run time.
